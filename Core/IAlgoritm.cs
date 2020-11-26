@@ -10,10 +10,7 @@ namespace Core
 	{
 		IEnumerable<IPoint2D> GetPosition();
 
-		async Task<IEnumerable<IPoint2D>> GetPositionAsync()
-		{
-			return await Task.Run(GetPosition);
-		}
+		async Task<IEnumerable<IPoint2D>> GetPositionAsync() => await Task.Run(GetPosition);
 	}
 
 }

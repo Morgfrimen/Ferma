@@ -14,10 +14,6 @@ namespace Core
 		}
 
 #pragma warning disable CA1822 // Пометьте члены как статические
-		public IAlgoritm GetSymmetricalHingerodScheme(double L, double H, double Alfa)
-#pragma warning restore CA1822 // Пометьте члены как статические
-		{
-			return new SymmetricalHingerodScheme(L, H, Alfa);
-		}
+		public IAlgoritm GetSymmetricalHingerodScheme(double L, double H, double Alfa) => new SymmetricalHingerodScheme(L, H, Alfa);
 	}
 }
