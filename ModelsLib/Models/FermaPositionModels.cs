@@ -1,6 +1,4 @@
-﻿using ModelsLib;
-
-namespace FermaLib.Models
+﻿namespace ModelsLib.Models
 {
 
 	public record FermaPositionModels : IPositionFerma

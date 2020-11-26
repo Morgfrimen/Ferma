@@ -1,11 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using FermaLib.Models;
-
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 using ModelsLib;
+using ModelsLib.Models;
 
 namespace Test
 {
