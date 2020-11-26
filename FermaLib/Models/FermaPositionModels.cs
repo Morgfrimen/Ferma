@@ -1,7 +1,9 @@
-﻿namespace FermaLib.Models
+﻿using ModelsLib;
+
+namespace FermaLib.Models
 {
 
-	public record FermaPositionModels : IPosition
+	public record FermaPositionModels : IPositionFerma
 	{
 
 		#region Implementation of IPosition

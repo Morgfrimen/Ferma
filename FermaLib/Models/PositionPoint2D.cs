@@ -1,4 +1,6 @@
-﻿namespace FermaLib.Models
+﻿using ModelsLib;
+
+namespace FermaLib.Models
 {
 	public record PositionPoint2D : IPoint2D
 	{

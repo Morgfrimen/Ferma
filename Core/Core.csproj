@@ -15,7 +15,7 @@
 	</PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FermaLib\FermaLib.csproj" />
+    <ProjectReference Include="..\FermaLib\ModelsLib.csproj" />
   </ItemGroup>
 
 </Project>

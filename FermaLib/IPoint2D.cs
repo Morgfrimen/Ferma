@@ -1,4 +1,4 @@
-﻿namespace FermaLib
+﻿namespace ModelsLib
 {
 	public interface IPoint2D
 	{
