@@ -8,8 +8,7 @@ using FermaLib;
 #endregion
 
 Console.WriteLine("Запуск расчета");
-bool runApp = true;
-while(runApp)
+while(true)
 {
 	try
 	{
@@ -63,9 +62,10 @@ while(runApp)
 
 		Console.WriteLine("Расчет координат завершен!");
 		Console.WriteLine("Продолжить?(Д\\Н)");
-		if(Console.ReadKey().KeyChar.ToString().ToUpper() == "Н")
+		var charInput = Console.ReadKey().KeyChar.ToString().ToUpper();
+		if(charInput == "Н" || charInput == "Y")
 		{
-			runApp = false;
+			break;
 		}
 
 		Console.Clear();
