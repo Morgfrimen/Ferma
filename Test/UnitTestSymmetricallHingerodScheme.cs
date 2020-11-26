@@ -5,6 +5,8 @@ using FermaLib.Models;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+using ModelsLib;
+
 namespace Test
 {
 	[TestClass]
@@ -27,8 +29,8 @@ namespace Test
 		[TestMethod]
 		public void TestGetPosition()
 		{
-			IList<FermaLib.IPoint2D> first = Core.Core.CreateInstance().GetSymmetricalHingerodScheme(L, H, Alfa).GetPosition().ToList();
-			IList<FermaLib.IPoint2D> second = new List<FermaLib.IPoint2D>()
+			IList<IPoint2D> first = Core.Core.CreateInstance().GetSymmetricalHingerodScheme(L, H, Alfa).GetPosition().ToList();
+			IList<IPoint2D> second = new List<IPoint2D>()
 			{
 				new PositionPoint2D(250,50),
 				new PositionPoint2D(166.66,184.98),
@@ -50,8 +52,8 @@ namespace Test
 		[TestMethod]
 		public void TestGetPositionAsync()
 		{
-			IList<FermaLib.IPoint2D> first = ( Core.Core.CreateInstance().GetSymmetricalHingerodScheme(L, H, Alfa).GetPositionAsync().Result ).ToList();
-			IList<FermaLib.IPoint2D> second = new List<FermaLib.IPoint2D>()
+			IList<IPoint2D> first = ( Core.Core.CreateInstance().GetSymmetricalHingerodScheme(L, H, Alfa).GetPositionAsync().Result ).ToList();
+			IList<IPoint2D> second = new List<IPoint2D>()
 			{
 				new PositionPoint2D(250,50),
 				new PositionPoint2D(166.66,184.98),

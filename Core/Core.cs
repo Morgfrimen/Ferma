@@ -1,5 +1,4 @@
-﻿
-using Core.Date;
+﻿using Core.Date;
 
 namespace Core
 {

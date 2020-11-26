@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Threading.Tasks;
 
-using FermaLib;
+using ModelsLib;
 #endregion
 
 Console.WriteLine("Запуск расчета");

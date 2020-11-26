@@ -1,7 +1,7 @@
-﻿namespace FermaLib
+﻿namespace ModelsLib
 {
 
-	public interface IPosition
+	public interface IPositionFerma
 	{
 		public double PositionX1 { get; }
 		public double PositionY1 { get; }
