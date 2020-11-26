@@ -7,6 +7,12 @@
   <ItemGroup>
     <None Remove="Date\Симметричная ферма.PNG" />
   </ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+		<FileAlignment>4096</FileAlignment>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FermaLib\FermaLib.csproj" />

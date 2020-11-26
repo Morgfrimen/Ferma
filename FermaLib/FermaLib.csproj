@@ -3,5 +3,10 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
-
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+		<FileAlignment>4096</FileAlignment>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
 </Project>
