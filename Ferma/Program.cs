@@ -62,8 +62,7 @@ while(true)
 
 		Console.WriteLine("Расчет координат завершен!");
 		Console.WriteLine("Продолжить?(Д\\Н)");
-		string charInput = Console.ReadKey().KeyChar.ToString().ToUpper();
-		if(charInput is "Н" or "Y")
+		if(Console.ReadKey().KeyChar.ToString().ToUpper() is "Н" or "Y")
 		{
 			break;
 		}
